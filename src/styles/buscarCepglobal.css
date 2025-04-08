@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetando alguns estilos padrão para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: deeppink;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.countainer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.countainer-logo {
+    font-size: 40px;
+}
+
+.countainer-texto h1 {
+    font-size: 30px;
+}
+
+/* Garantindo que o ícone e o texto do header tenham o mesmo tamanho */
+.countainer-logo span, .countainer-texto h1 {
+    font-size: 40px; /* Tamanho ajustado para garantir que ambos tenham o mesmo tamanho */
+    display: inline-block;
+}
+
+/* Main content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Container dos inputs */
+.countainer {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(255, 174, 217);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 181, 230, 0.589);
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: blueviolet;
+}
+
+/* Estilo dos inputs */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid deeppink;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+    border-color:blueviolet; /* Altera a cor da borda ao focar */
+    outline: none;
+    box-shadow: 0 0 8px rgba(166, 97, 255, 0.5); /* Adiciona um brilho ao redor do input */
+}
+
+/* Melhorando a aparência dos inputs desabilitados */
+input.form-control:disabled {
+    background-color: white;
+    color: black;
+    border-color: deeppink;
+}
+
+/* Estilos adicionais */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group input {
+    text-align: center;
+}
+
+/* Container dos botões */
+.countainer-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos para os botões */
+button.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    width: 150px;
+}
+
+/* Botão de pesquisar */
+button#btnPesquisar {
+    background-color: blueviolet; /* Verde para o botão de pesquisar */
+    color: white;
+    border: 2px solid blueviolet;
+}
+
+button#btnPesquisar:hover {
+    background-color: rgb(216, 181, 250); /* Cor mais escura para hover */
+    border-color: rgb(157, 122, 192);
+}
+
+button#btnPesquisar:focus {
+    box-shadow: 0 0 8px rgba(131, 40, 167, 0.5); /* Brilho no foco */
+    outline: none;
+}
+
+/* Botão de limpar */
+button#btnLimpar {
+    background-color: blueviolet; /* Vermelho para o botão de limpar */
+    color: white;
+    border: 2px solid blueviolet;
+}
+
+button#btnLimpar:hover {
+    background-color: rgb(216, 181, 250); /* Cor mais escura para hover */
+    border-color: rgb(157, 122, 192);
+}
+
+button#btnLimpar:focus {
+    box-shadow: 0 0 8px rgba(131, 40, 167, 0.5); /* Brilho no foco */
+    outline: none;
+}
+
+/* Estilo do ícone dentro dos botões */
+button span.material-symbols-outlined {
+    font-size: 20px;
+}
